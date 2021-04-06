@@ -1,0 +1,21 @@
+.footer {
+  padding: 5rem 0 1rem;
+  font-size: 0.8rem;
+  a {
+    color: $text-dark;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  ///// ennyit
+  & .menu-item .nav-link {
+    padding: unset;
+    color: $primary;
+    background-color: transparent;
+    text-decoration: none;
+    &:hover {
+      color: $accent;
+    }
+  }
+}

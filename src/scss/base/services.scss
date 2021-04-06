@@ -1,0 +1,156 @@
+.services-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: -1;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+      to right,
+      rgba($secondary-dark, 1) 0%,
+      rgba($secondary-dark, 0.98) 30%,
+      rgba($secondary-dark, 0.85) 60%,
+      rgba($secondary-dark, 0.4) 100%
+    );
+  }
+}
+
+.section {
+  padding: 4rem 0.5rem;
+}
+
+.align-title {
+  margin: 0;
+}
+
+.padding-extra-top {
+  padding-top: 6rem;
+}
+.padding-extra-bottom {
+  padding-bottom: 6rem;
+}
+
+.section-image {
+  position: relative;
+  width: 100%;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.wide-section-image {
+  width: 100%;
+}
+
+.wide-section-image-extra {
+  max-width: 60rem;
+}
+
+.orange-puzzle {
+  position: absolute;
+  width: 12rem;
+  height: auto;
+  bottom: 0;
+  transform: translateY(6rem);
+  right: 5%;
+  z-index: 15;
+}
+
+@include media-breakpoint-up(md) {
+  .align-title {
+    margin: 1rem;
+  }
+  .section-image {
+    max-width: 31rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-45%);
+  }
+  .section-image-right {
+    right: -50px;
+  }
+  .section-image-left {
+    left: -50px;
+  }
+  .section-image-left-extra {
+    left: -140px;
+  }
+  .section-image-right-extra {
+    right: -140px;
+  }
+  .wide-section-image,
+  .wide-section-image-extra {
+    transform: translateY(-55%);
+  }
+  .wide-section-image {
+    max-width: 70rem;
+    right: -60%;
+  }
+  .wide-section-image-extra {
+    max-width: 60rem;
+    right: -50%;
+  }
+  .orange-puzzle {
+    width: 13rem;
+    transform: translateY(10rem);
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .section-image {
+    max-width: 36rem;
+  }
+  .section-image-right {
+    right: 0;
+  }
+  .section-image-left {
+    left: 0;
+  }
+  .wide-section-image {
+    max-width: 95rem;
+    right: -55%;
+  }
+  .wide-section-image-extra {
+    max-width: 60rem;
+    right: -40%;
+  }
+  .section-img--branding-guy-orange-shirt {
+    right: -100px;
+  }
+  .section {
+    padding: 5rem 0.5rem;
+  }
+  .padding-extra-top {
+    padding-top: 8rem;
+  }
+  .padding-extra-bottom {
+    padding-bottom: 8rem;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .wide-section-image {
+    max-width: 115rem;
+    right: -55%;
+  }
+  .wide-section-image-extra {
+    // max-width: 65rem;
+    right: -27%;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .wide-section-image-extra {
+    max-width: 65rem;
+    right: -30%;
+  }
+}
